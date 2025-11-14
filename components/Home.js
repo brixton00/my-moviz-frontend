@@ -41,7 +41,7 @@ function Home() {
   );
 
   useEffect(() => {
-  fetch('my-moviz-backend-mauve.vercel.app/movies', { method: 'GET' })
+  fetch('https://my-moviz-backend-mauve.vercel.app/movies', { method: 'GET' })
     .then(response => response.json())
     .then(data => {
       const fetched = data.movies.map(item => {
